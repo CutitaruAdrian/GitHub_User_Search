@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cutit_000.github_user_search.Activities.MainActivity"
+    android:background="@drawable/bgimage">
+
+    <EditText
+        android:id="@+id/inputUsernameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:soundEffectsEnabled="true"
+        android:elevation="0dp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/repButton"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputUsernameField"
+        android:layout_toEndOf="@+id/userStatus"
+        android:layout_toRightOf="@+id/userStatus"
+        android:soundEffectsEnabled="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="25"
+        android:text="Repo." />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/userStatus"
+        android:layout_toStartOf="@+id/userStatus"
+        android:soundEffectsEnabled="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="25"
+        />
+
+    <TextView
+        android:id="@+id/userStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchButton"
+        android:layout_centerHorizontal="true"
+        android:text="User Status"
+        android:textSize="24sp" />
+</RelativeLayout>
